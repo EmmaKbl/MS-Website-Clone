@@ -11,12 +11,38 @@ body {
     background-color: #fff;
     min-width: 310px;
 }
+.grid_container{
+    max-width: calc(1600px + 10%);
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 
 
 /* header css  */
 
 
 /* main css  */
+.section2{
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 15px;
+}
+.content_articles{
+    display: flex;
+    
+}
+.one__two_picture{
+    display: flex;
+}
+.three__four_picture{
+    display: flex;
+}
+.content_article_three{
+    padding-left: 1rem;
+}
+
 
 
 /* button css  */
