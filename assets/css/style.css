@@ -35,13 +35,6 @@ ul {
 
 /* start of header css  */
 
-
-/* start of header css  */
-
-header {
-    /* background-color: burlywood; */
-}
-
 .container {
     width: 100%;
     max-width: 1600px;
@@ -128,9 +121,6 @@ header {
     font-size: 9px;
     color: #777;
 }
-
-
-/* end of header css  */
 
 
 /* end of header css  */
