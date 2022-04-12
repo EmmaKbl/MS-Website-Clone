@@ -11,8 +11,8 @@ body {
     background-color: #fff;
     min-width: 310px;
 }
-.grid_container{
-    max-width: calc(1600px + 10%);
+.container{
+    max-width: 1600px;
     margin: 0 auto;
     padding-left: 5%;
     padding-right: 5%;
@@ -24,47 +24,149 @@ h1, h2, h3, h4, h5, h6, ol, p, ul {
 
 
 
-/* header css  */
+/* Sections 2 services start here */
+.section2__heading, .article__heading{
+    font-weight: 600;
+    line-height: 20px;
+    padding: 36px 0 4px;
+    font-size: 15px;
+}
 
-
-/* main css  */
 .content_articles{
     display: flex;
     
 }
-.one__two_picture{
+.content_article_second_colum{
+    padding-right: 1rem;
+}
+.first__colum_second_picture, .third__colum_last_picture{
     display: flex;
+    gap: 2rem;
 }
-.three__four_picture{
-    display: flex;
-}
-.content_article_three{
-    padding-left: 1rem;
-}
-.title{
-    font-size: 15px;
-    line-height: 20px;
+
+
+.article__heading{
     font-weight: 600;
-    /*opacity: .95;*/
-    padding-top: 1px;
-    padding-bottom: 2px;
-    margin-top: 37px;
+    line-height: 20px;
+    padding: 36px 0 4px;
+    font-size: 15px;
+
 }
-.follow__social{
-    margin-top: 8px;
+.article__paragraph{
+    font-size: 13px;
+}
+.s__b_span{
+    font-size: 12px;
+    color: #0067b8;
+    
+}
+.link, .link2, .link3, .link4{
+    margin-top: 1rem;
+}
+.s__b_link:nth-child(1)::after{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    content: ">";
+    vertical-align: top;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+.s__b_link{
+    text-decoration: underline;
+    line-height: 16px;
+    font-size: 11px; 
+}
+a {
+    text-decoration: none;
+    color: rgb(48, 41, 41);
+    font-size: 11px;
+} 
+
+/*end section 2 services here !!!*/
+
+/*carousel start here !!!*/
+
+.hero__image {
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    color: rgb(10, 1, 1);
+}
+.carousel__position_element {
+    position: absolute;
+    top: 41%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+}
+.title__hero{
+    padding: 36px 0 4px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 1rem;
+}
+.paragraph__hero{
+    font-size: 14px;
+    margin-top: 1rem;
+}
+.button {
+    background-color: #0f0f0f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 8rem;
+}
+/*end carousel here !!!*/
+
+/* social follow start here !!!*/
+.social__follow{
+    margin-top: 1.5rem;
+}
+/* social follow end here !!!*/
+
+/*footer start here*/
+footer{
+    background-color: #f2f2f2;
+    margin-top: 48px;
+}
+
+.footer__Area-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top__footer_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+.footer__heading{
+    padding: 36px 0 4px;
+    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    color: rgba(0,0,0,.6);
-    padding-right: 12px;
-    margin-bottom: 4px
 }
-
-
-
-/* button css  */
-
-
-/* footer css  */
-
-
-/* media queries  */
+.top__footer_link_stuff{
+    line-height: 1.5rem;
+}
+.footer__bottom_link, .footer__top_link:hover {
+    text-decoration: underline;
+    line-height: 16px;
+    font-size: 11px; 
+}
