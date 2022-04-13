@@ -186,13 +186,37 @@ body {
     flex-direction: column;
 }
 
-.pad-hero__btn {
-    /* background-color: #000; */
+.ha__link a {
+    display: inline-block;
+    padding: 12px 6px;
+    width: 184px;
+    min-height: 44px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
 
-.ms-btn {
-    background-color: #000;
-    color: #fff;
+.ha__link a:hover {
+    text-decoration: underline;
+}
+
+.ha__link a div {
+    margin: auto;
+    max-height: 60px;
+    line-height: 20px;
+    width: 100%;
+    max-width: 125px;
+    overflow: hidden;
+    text-align: center;
+    white-space: normal;
+    margin-left: 22px;
+    margin-top: 4px;
+}
+
+
+/* button css */
+
+.btn {
     display: inline-block;
     align-items: center;
     text-decoration: none;
@@ -205,23 +229,42 @@ body {
     text-decoration: none;
 }
 
-.ms-btn .fa-chevron-right {
+.btn__bg-clear {
+    background-color: none;
+}
+
+.btn__color-black {
+    color: #000;
+}
+
+.btn__bg-white {
+    background-color: #fff;
+}
+
+.btn__bg-black {
+    background-color: #000;
+}
+
+.btn__color-white {
+    color: #fff;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn a:hover {
+    transition: all 200ms ease-in-out;
+    border-bottom: 2px solid;
+}
+
+.btn .fa-chevron-right {
     padding-left: 4px;
     font-size: 13px !important;
 }
 
-.ms-btn a {
-    text-decoration: none;
-    color: #fff;
-}
 
-.ms-btn a:hover {
-    transition: all 200ms ease-in-out;
-    border-bottom: 2px #fff solid;
-}
-
-
-/* button css  */
+/* end of button css  */
 
 
 /* footer css  */
