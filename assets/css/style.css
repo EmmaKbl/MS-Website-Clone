@@ -1,23 +1,72 @@
 *,
-::before,
-::after {
+*:before,
+*:after {
     box-sizing: border-box;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 body {
-    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 15px;
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, sans-serif;
     color: #000;
-    background-color: #fff;
     min-width: 310px;
+    width: 100%;
+}
+/* Sections 2 services start here */
+.section2__heading, .article__heading{
+    font-weight: 600;
+    line-height: 20px;
+    padding: 36px 0 4px;
+    font-size: 15px;
+}
+
+.content_articles{
+    display: flex;
+    
+}
+.content_article_second_colum{
+    padding-right: 1rem;
+}
+.first__colum_second_picture, .third__colum_last_picture{
+    display: flex;
+    gap: 2rem;
 }
 
 
+.article__heading{
+    font-weight: 600;
+    line-height: 20px;
+    padding: 36px 0 4px;
+    font-size: 15px;
 
-/* button css  */
+}
+.article__paragraph{
+    font-size: 13px;
+}
+.s__b_span{
+    font-size: 12px;
+    color: #0067b8;
+    
+}
+.link, .link2, .link3, .link4{
+    margin-top: 1rem;
+}
+.s__b_link:nth-child(1)::after{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    content: ">";
+    vertical-align: top;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+/*end section 2 services here !!!*/
 
-
-/* footer css  */
-
-
-/* media queries  */
