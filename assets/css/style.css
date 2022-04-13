@@ -224,9 +224,19 @@ body {
     left: 0;
     text-overflow: clip;
     overflow: hidden;
+    transition: all 200ms ease-in-out;
     line-height: 18.5px;
     padding: 11px 25px;
     text-decoration: none;
+    font-weight: 600;
+}
+
+.article__text .btn {
+    padding: 11px 25px 11px 0px;
+}
+
+.article__text .btn i {
+    margin-right: 15px;
 }
 
 .btn__bg-clear {
@@ -249,6 +259,10 @@ body {
     color: #fff;
 }
 
+.btn__color-blue {
+    color: #0067B8;
+}
+
 .btn a {
     text-decoration: none;
 }
@@ -267,7 +281,67 @@ body {
 /* end of button css  */
 
 
-/* footer css  */
+/* start of articles css */
+
+.shop__articles {
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.article__col {
+    width: 100%;
+    max-width: 382px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.article__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article__col>img {
+    padding-bottom: 2.1rem;
+}
+
+.article__text h2 {
+    padding-top: 1px;
+    /* padding-bottom: 2px; */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .3rem;
+    line-height: 24px;
+}
+
+.article__text p {
+    line-height: 20px;
+}
 
 
-/* media queries  */
+/* end of articles css */
+
+.pad__hero {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.pad-hero__hover-text {
+    position: absolute;
+    left: 6%;
+    top: 45%;
+    line-height: 20px;
+    color: #fff;
+    background-color: #1A1A1A;
+    max-width: 520px;
+    z-index: 1;
+}
+
+
+/* Footer CSS  */
