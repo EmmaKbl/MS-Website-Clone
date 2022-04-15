@@ -11,35 +11,12 @@ body {
     background-color: #fff;
     min-width: 310px;
 }
-
-.grid_container {
-    max-width: calc(1600px + 10%);
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-p,
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-/* start of header css  */
-
 .container {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
 }
+/* start of header css  */
 
 .header__area {
     font-size: 13px !important;
@@ -66,12 +43,9 @@ ul {
 
 .logo {
     position: relative;
-    padding: 16px 6px 16px 10px;
     float: left;
     height: 100%;
-    margin-top: 1px;
     width: 137px;
-    outline-offset: -2px;
 }
 
 .logo-img {
@@ -124,50 +98,3 @@ ul {
 
 
 /* end of header css  */
-
-
-/* main css  */
-
-.content_articles {
-    display: flex;
-}
-
-.one__two_picture {
-    display: flex;
-}
-
-.three__four_picture {
-    display: flex;
-}
-
-.content_article_three {
-    padding-left: 1rem;
-}
-
-.title {
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 600;
-    /*opacity: .95;*/
-    padding-top: 1px;
-    padding-bottom: 2px;
-    margin-top: 37px;
-}
-
-.follow__social {
-    margin-top: 8px;
-    font-size: 15px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, .6);
-    padding-right: 12px;
-    margin-bottom: 4px
-}
-
-
-/* button css  */
-
-
-/* footer css  */
-
-
-/* media queries  */
