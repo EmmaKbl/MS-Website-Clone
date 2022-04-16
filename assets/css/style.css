@@ -11,6 +11,7 @@ body {
     background-color: #fff;
     min-width: 310px;
 }
+
 .container {
     width: 100%;
     max-width: 1600px;
@@ -73,6 +74,7 @@ body {
 .header__right-nav-links li:not(:last-child) {
     margin-right: 2rem;
 }
+/* main css */
 
 .header__left-nav-links li a:hover,
 .header__right-nav-links li a:hover {
@@ -90,6 +92,7 @@ body {
     margin-left: 15px;
     color: #777;
 }
+
 
 .fa-chevron-down {
     font-size: 9px;
