@@ -17,12 +17,87 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
+/* start of header css  */
 
+.header__area {
+    font-size: 13px !important;
+    min-height: 54px;
+    margin-bottom: 2px;
+}
 
+.header__area a {
+    color: #000;
+    text-decoration: none;
+    /* max-height: 54px; */
+}
+
+.header__area-container {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px !important;
+    padding: 0px 7px;
+    /* background-color: aliceblue; */
+}
+
+.logo {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 137px;
+}
+
+.logo-img {
+    width: 108px;
+    height: 23px;
+}
+
+.header__nav {
+    display: flex;
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
+    justify-content: space-between;
+    flex: 1;
+    min-height: 54px;
+}
+
+.header__left-nav-links,
+.header__right-nav-links {
+    display: flex;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+
+.header__left-nav-links li,
+.header__right-nav-links li:not(:last-child) {
+    margin-right: 2rem;
+}
 /* main css */
 
+.header__left-nav-links li a:hover,
+.header__right-nav-links li a:hover {
+    padding: 2px 0px;
+    border-bottom: 2px #000 solid;
+}
 
-/* button css  */
+.fa-magnifying-glass {
+    font-size: 15px !important;
+    margin-left: 3px;
+    transform: rotate(90deg);
+}
+
+.fa-user-plus {
+    margin-left: 15px;
+    color: #777;
+}
 
 
-/* footer css  */
+.fa-chevron-down {
+    font-size: 9px;
+    color: #777;
+}
+
+
+/* end of header css  */
