@@ -74,7 +74,6 @@ body {
 .header__right-nav-links li:not(:last-child) {
     margin-right: 2rem;
 }
-/* main css */
 
 .header__left-nav-links li a:hover,
 .header__right-nav-links li a:hover {
