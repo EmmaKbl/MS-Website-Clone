@@ -1,15 +1,15 @@
 *,
-::before,
-::after {
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 15px;
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, sans-serif;
     color: #000;
-    background-color: #fff;
     min-width: 310px;
+    /* width: 100%; */
 }
 
 .container {
@@ -17,6 +17,8 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+
 /* start of header css  */
 
 .header__area {
@@ -28,7 +30,6 @@ body {
 .header__area a {
     color: #000;
     text-decoration: none;
-    /* max-height: 54px; */
 }
 
 .header__area-container {
@@ -56,8 +57,8 @@ body {
 
 .header__nav {
     display: flex;
-    /* flex-wrap: wrap; */
-    white-space: nowrap;
+    flex-wrap: wrap;
+    /* white-space: nowrap; */
     justify-content: space-between;
     flex: 1;
     min-height: 54px;
@@ -70,9 +71,14 @@ body {
     /* background-color: blueviolet; */
 }
 
+.header__nav li {
+    max-height: 9px;
+}
+
 .header__left-nav-links li,
 .header__right-nav-links li:not(:last-child) {
     margin-right: 2rem;
+    /* background-color: #0067B8; */
 }
 
 .header__left-nav-links li a:hover,
@@ -92,7 +98,6 @@ body {
     color: #777;
 }
 
-
 .fa-chevron-down {
     font-size: 9px;
     color: #777;
@@ -100,3 +105,454 @@ body {
 
 
 /* end of header css  */
+
+
+/* Main CSS  */
+
+main {
+    margin-bottom: 5rem;
+}
+
+.sales__notification {
+    display: flex;
+    max-width: calc(1600px + 10%);
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0067B8;
+    color: #fff;
+    font-size: 13.5px !important;
+}
+
+.sales__notification a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.sales__notification:hover {
+    cursor: pointer;
+}
+
+.sales__notification a:hover {
+    text-decoration: underline;
+}
+
+.sales__notification i {
+    transition: transform 200ms ease-in-out;
+}
+
+.sales__notification:hover i {
+    transform: translateX(50%);
+}
+
+.sales__notification .fa-chevron-right {
+    opacity: 0.7;
+    margin-left: 10px;
+    font-size: 15px !important;
+}
+
+
+/* start of hero css  */
+
+.hero {
+    position: relative;
+}
+
+.hero__top {
+    margin-bottom: 48px;
+}
+
+.hero__top img {
+    width: 100%;
+    max-width: 1600;
+}
+
+.hero__hover-text {
+    position: absolute;
+    right: 6.05%;
+    top: 27.4%;
+    line-height: 22px;
+    background-color: #F2F2F2;
+    max-width: 520px;
+    z-index: 1;
+}
+
+.hero__hover-text h2 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin-bottom: 1.7rem;
+    margin-top: 1rem;
+}
+
+.hero__hover-text::before {
+    content: 'Spring Sale';
+    background-color: #9BF00B;
+    padding: 5px 14px;
+    font-weight: 600;
+}
+
+.hero__hover-text p {
+    margin-bottom: 1.2rem;
+}
+
+.hero__articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 129px;
+    margin-bottom: 48px;
+}
+
+.hero__articles-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 114px;
+    padding-top: 15px;
+}
+
+.ha__link {
+    display: flex;
+    flex-direction: column;
+}
+
+.ha__link a {
+    display: inline-block;
+    padding: 12px 6px;
+    width: 184px;
+    min-height: 44px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.ha__link a:hover {
+    text-decoration: underline;
+}
+
+.ha__link a div {
+    margin: auto;
+    max-height: 60px;
+    line-height: 20px;
+    width: 100%;
+    max-width: 125px;
+    overflow: hidden;
+    text-align: center;
+    white-space: normal;
+    margin-left: 22px;
+    margin-top: 4px;
+}
+
+
+/* end of hero css */
+
+
+/* buttons css + animation */
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    text-overflow: clip;
+    overflow: hidden;
+    line-height: 18.5px;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 24px;
+}
+
+.article__text .btn {
+    padding: 11px 25px 11px 0px;
+}
+
+.article__text .btn i {
+    margin-right: 15px;
+}
+
+.btn__bg-clear {
+    background-color: none;
+}
+
+.btn__color-black {
+    color: #000;
+}
+
+.btn__bg-white {
+    background-color: #fff;
+}
+
+.btn__bg-black {
+    background-color: #000;
+}
+
+.btn__color-white {
+    color: #fff;
+}
+
+.btn__color-blue {
+    color: #0067B8;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:hover a {
+    border-bottom: 2px solid;
+}
+
+.btn i {
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover i {
+    transform: translateX(50%);
+}
+
+.btn .fa-chevron-right {
+    padding-left: 4px;
+    font-size: 13px !important;
+}
+
+
+/* end of button css  */
+
+
+/* for-business section css  */
+
+.business .business__h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 36px 0 4px;
+    padding-top: 2.25rem;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+
+/* for-business section css  */
+
+
+/* start of articles css */
+
+.shop__articles {
+    /* background-color: green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.articles__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.article__col {
+    width: 100%;
+    max-width: 382px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: .75rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.article__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article__col>img {
+    width: 100%;
+    max-width: 382px;
+    padding-bottom: 2.1rem;
+}
+
+.article__text h2 {
+    padding-top: 1px;
+    /* padding-bottom: 2px; */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .3rem;
+    line-height: 24px;
+}
+
+.article__text p {
+    line-height: 20px;
+}
+
+
+/* end of articles css */
+
+
+/* start of pad-hero-image css */
+
+.pad__hero {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.pad__hero img {
+    width: 100%;
+    max-width: 100rem;
+}
+
+.pad-hero__hover-text {
+    position: absolute;
+    left: 6%;
+    top: 38%;
+    max-width: 32.5rem;
+    box-sizing: content-box;
+    max-height: 7rem;
+    z-index: 1;
+}
+
+.pad-hero__hover-text h2 {
+    font-size: 2.125rem;
+    margin-bottom: 1.5rem;
+    line-height: 20px;
+}
+
+.pad-hero__hover-text p {
+    font-weight: 600;
+    max-height: 5rem;
+    margin-bottom: 1.2rem;
+    line-height: 20px;
+}
+
+
+/* end of pad hero css  */
+
+
+/* social follow start here */
+
+.social__follow {
+    display: flex;
+    align-items: center;
+    color: #616161;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.social__follow span {
+    margin-right: 1rem;
+}
+
+.social__follow a:hover {
+    opacity: .8;
+}
+
+
+/* social follow end here */
+
+
+/*footer start here */
+
+footer {
+    background-color: #f2f2f2;
+    margin-top: 3rem;
+    font-size: 11px !important;
+}
+
+.footer__Area-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__Area a {
+    text-decoration: none;
+    color: #616161;
+}
+
+.footer__Area a:hover {
+    text-decoration: underline;
+}
+
+.top__footer_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.right__footer-list,
+.left__footer-list {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 9rem;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    color: #616161;
+}
+
+.footer__heading {
+    padding: 36px 0 4px;
+    font-weight: 600;
+    font-size: 15px !important;
+    line-height: 20px;
+}
+
+.top__footer_link_stuff {
+    line-height: 1rem;
+}
+
+.top__footer_link_stuff li {
+    padding: 8px 0;
+}
+
+.footer__bottom_link,
+.footer__top_link:hover {
+    text-decoration: underline;
+    line-height: 16px;
+}
+
+.footer__bottom_link {
+    font-size: 11px;
+}
+
+.bottom__footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+}
+
+.footer__bottom_list {
+    display: flex;
+    gap: 1rem;
+}
+
+.globe {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.fa-earth-americas {
+    font-size: 20px;
+    display: block;
+    color: #616161;
+}
+
+
+/* footer css ends here  */
